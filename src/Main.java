@@ -86,17 +86,21 @@ public class Main {
         System.exit(0);
             }
     private static void searchExpenses(ArrayList<Integer> arrayList) {
-        int leng = arrayList.size();
         int expenseLookFor = 0;
+        boolean foundExpense = false;
         System.out.println("Enter the expense you need to search:\t");
         Scanner scanner = new Scanner(System.in);
         expenseLookFor = scanner.nextInt();
         for (int expense : arrayList) {
             if(expense == expenseLookFor) {
-                System.out.println("Found expense " + expenseLookFor);
+                foundExpense = true;
             }
         }
-
+        if(foundExpense){
+            System.out.println("Found expense " + expenseLookFor);
+        } else {
+            System.out.println("Expense: " + expenseLookFor + " could not be found!");
+        }
     }
     private static void sortExpenses(ArrayList<Integer> arrayList) {
         int arrlength =  arrayList.size();
@@ -104,7 +108,6 @@ public class Main {
 
             int largestIndex = 0;
             for(int i = 0; i <= lastUnsortedIndex; i++){
-                System.out.println(arrayList.get(i) + " - " + arrayList.get(largestIndex));
                 if(arrayList.get(i) > arrayList.get(largestIndex)){
                     largestIndex = i;
                 }
