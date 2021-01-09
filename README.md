@@ -18,7 +18,10 @@ As a developer, fix the bugs in the application using the appropriate algorithmi
 
 ## Examples 
 
-### Example 1
+### Searching
+![searching](https://user-images.githubusercontent.com/58124052/104103401-86b43c00-5267-11eb-8544-52d385d7b6ae.PNG)
 
 
-### Example 2
+### Sorting 
+![sorting](https://user-images.githubusercontent.com/58124052/104103403-874cd280-5267-11eb-81bf-40bad74cfedb.PNG)
+
